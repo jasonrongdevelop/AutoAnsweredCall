@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jasonrong.call.Main2Activity">
+<android.support.v7.widget.AppCompatTextView
+    android:id="@+id/incomming_call_bumber"
+    android:text="12344"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/answer_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="answer"
+        app:layout_constraintEnd_toStartOf="@+id/reject_call"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/incomming_call_bumber"
+        app:layout_constraintHorizontal_chainStyle="packed" />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/reject_call"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:text="reject"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/incomming_call_bumber"
+        android:layout_marginStart="104dp"
+        app:layout_constraintStart_toEndOf="@+id/answer_call" />
+</android.support.constraint.ConstraintLayout>
